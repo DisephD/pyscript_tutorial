@@ -8,7 +8,6 @@ data["week"] = data["Date"].dt.isocalendar().week
 data["day_of_the_week"] = data["Date"].dt.year
 data["hour"] = data["Time"].dt.strftime("%H: %M")
 data["day"] = (data["Date"].dt.day).astype("category")
-data["Date"] = data["Date"].dt.strftime("%d %B %Y")
 
 month_names = {11: "November", 12: "December", 1: "January", 2: "February", 3: "March"}
 data["month"] = data["month"].map(month_names)
